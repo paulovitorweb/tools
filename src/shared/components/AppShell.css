@@ -1,0 +1,13 @@
+.app-shell { width: min(1120px, calc(100% - 40px)); margin: 0 auto; min-height: 100vh; display: flex; flex-direction: column; }
+.site-header { height: 86px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
+.brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-size: 20px; font-weight: 700; letter-spacing: -.5px; }
+.brand-mark { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 10px; color: white; background: var(--primary); font-size: 18px; }
+.brand-name { display: inline-flex; align-items: baseline; gap: 5px; }
+.brand-owner { color: var(--ink); font-size: .78em; font-weight: 600; letter-spacing: -.25px; }
+.brand-product { color: var(--primary); }
+.brand-dot { color: var(--ink); }
+.tool-label { color: var(--muted); font-size: 14px; font-weight: 600; }
+.app-shell main { flex: 1; }
+footer { padding: 32px 0; color: var(--muted); text-align: center; font-size: 13px; }
+@media (max-width: 600px) { .app-shell { width: min(100% - 24px, 1120px); } .site-header { height: 72px; } .tool-label { display: none; } .brand { gap: 8px; font-size: 17px; }.brand-mark { width: 29px; height: 29px; }.brand-name { gap: 4px; } }
+@media (max-width: 370px) { .brand-owner { font-size: .7em; } }
